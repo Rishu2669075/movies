@@ -13,20 +13,20 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21484'))
-API_HASH = environ.get('API_HASH', 'db6286a041adf07ef4244e')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7807I9ygow9sLqNQuI7hsWPm5FLNfBr9c')
+API_ID = int(environ.get('API_ID', '24989803'))
+API_HASH = environ.get('API_HASH', '1f42d3bb1ac54fed8941aa7befe39111')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5016109398').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/Innocent_babe_dead") # ADMIN USERNAME
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6286894502').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/RishuBotz_Bot") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002190681742'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+K2kgCBgaat80YWQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002190681742').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/moviegroup24h')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002810916133').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv:learningbajority&appName=learningbots")
-DATABASE_NAME = environ.get('DATABASE_NAME', "learningbots")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rishubhai2")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -35,11 +35,11 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002810916133')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002613579457')
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/allapkmodchat') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
@@ -60,7 +60,7 @@ LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "ben
 QUALITIES = ["HdRip","web-dl" ,"bluray", "hdr", "fhd" , "240p", "360p", "480p", "540p", "720p", "960p", "1080p", "1440p", "2K", "2160p", "4k", "5K", "8K"]
 YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
-REF_PREMIUM = 30
+REF_PREMIUM = 10
 PREMIUM_POINT = 1500
 #---------------------------------------------------------------
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -68,10 +68,10 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
-FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
-REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/_kA.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://graph.org/file/493e6b664fc531f210074-04b55d01c3abc10cf0.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
+FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://graph.org/file/bfea54d7a2c920860331c-63660eeff49b2b3498.jpg')
+REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/61b3e842d734fb89caf8c-e7e27195172f955cd1.jpg")).split() 
+PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/cd8a38a7faf563e66fd99-9b0d740742deeaa30a.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
